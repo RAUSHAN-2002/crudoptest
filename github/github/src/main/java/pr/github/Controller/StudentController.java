@@ -26,6 +26,13 @@ public class StudentController {
      String s = studentService.addStudent(dto);
      return s;
  }
+    @GetMapping("/str"){
+   public String getstr(){
+     return "getstr";
+       
+   }
+        
+    }
 
     @DeleteMapping("/{id}")
     public String DeleteStudent(@PathVariable long id){
