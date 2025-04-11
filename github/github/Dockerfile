@@ -1,11 +1,10 @@
-# Use OpenJDK image
-FROM openjdk:17-jdk-alpine
+FROM openjdk:17-jdk-slim
 
-# Set working directory inside container
 WORKDIR /app
 
-# Copy the JAR file
-COPY target/github.jar app.jar
+# Copy the jar and keep the same name
+COPY target/github.jar github.jar
 
-# Run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+EXPOSE 8080
+
+ENTRYPOINT ["java", "-jar", "github.jar"]
