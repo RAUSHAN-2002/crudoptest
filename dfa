@@ -1,0 +1,12 @@
+[1mdiff --git a/github/github/src/main/java/pr/github/Entity/Student.java b/github/github/src/main/java/pr/github/Entity/Student.java[m
+[1mindex 9851df3..62f19e9 100644[m
+[1m--- a/github/github/src/main/java/pr/github/Entity/Student.java[m
+[1m+++ b/github/github/src/main/java/pr/github/Entity/Student.java[m
+[36m@@ -53,5 +53,4 @@[m [mpublic class Student {[m
+     private String email;[m
+ [m
+     @Column(name = "phone", nullable = false, unique = true)[m
+[31m-    private String phone;[m
+[31m-}[m
+[32m+[m[32m    private String phone;[m
+\ No newline at end of file[m
