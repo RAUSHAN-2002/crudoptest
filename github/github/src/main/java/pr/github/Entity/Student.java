@@ -67,5 +67,19 @@ public class Student {
     private  String roleemp;
 
 
+    public String getResponsebility() {
+        return responsebility;
+    }
+
+    public void setResponsebility(String responsebility) {
+        this.responsebility = responsebility;
+    }
+
+    @Column(name="responseiblity")
+    private String responsebility;
+
+
+
+
 
 }
