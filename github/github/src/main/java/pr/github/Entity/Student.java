@@ -54,4 +54,18 @@ public class Student {
 
     @Column(name = "phone", nullable = false, unique = true)
     private String phone;
+
+    public String getRoleemp() {
+        return roleemp;
+    }
+
+    public void setRoleemp(String roleemp) {
+        this.roleemp = roleemp;
+    }
+
+    @Column(name = "roleemployee",nullable= false, unique = true)
+    private  String roleemp;
+
+
+
 }

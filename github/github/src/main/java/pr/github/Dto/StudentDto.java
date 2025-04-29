@@ -1,5 +1,6 @@
 package pr.github.Dto;
 
+import jakarta.persistence.Column;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,6 +9,7 @@ import lombok.Setter;
 public class StudentDto {
     private Long id;
     private String name;
+
 
     public String getEmail() {
         return email;
@@ -43,4 +45,14 @@ public class StudentDto {
 
     private String email;
     private String phone;
+    public String getRoleemp() {
+        return roleemp;
+    }
+
+    public void setRoleemp(String roleemp) {
+        this.roleemp = roleemp;
+    }
+    
+    private  String roleemp;
+
 }
